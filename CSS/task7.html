@@ -1,0 +1,59 @@
+<html>
+    <head>
+        
+        <style>
+            #Sidenav a
+            {
+                position:absolute;
+                left: -80px;
+                transition: 0.5s;
+                padding: 10px;
+                width: 10%;
+                text-decoration: none;
+                font-size: 20px;
+                color:white;
+                border-radius: 0 5px 5px 0;
+            }
+
+            #Sidenav a:hover
+            {
+                left: 0;
+            }
+
+            #col1
+            {
+                background-color:rgb(26, 204, 10);
+                top:20px;
+            }
+            #col2
+            {
+                background-color:rgb(26, 105, 170);
+                top: 80px;
+            }
+            #col3
+            {
+                background-color:rgb(223, 31, 31);
+                top: 140px;
+            }
+            #col4
+            {
+                background-color:rgb(40, 41, 40);
+                top: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="Sidenav" class="sidenav">
+            <a href="#" id="col1">Home</a>
+            <a href="#" id="col2">About</a>
+            <a href="#" id="col3">Login</a>
+            <a href="#" id="col4">Contact</a>
+        </div>
+
+        <div style="margin-left: 120px;">
+            <h3>Hoverable Sidenav buttons</h3>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </body>
+</html>

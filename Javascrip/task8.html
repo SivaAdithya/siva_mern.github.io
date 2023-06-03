@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" class="train" src="images/train1.jpeg">
+  <hr>
+  <br><br><br>
+  <p>Click the button to make the train move <button type="button" onclick="func()">Click</button> </p>
+
+  <script>
+    function func() 
+    {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 5000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        Enter number: <input type="number" placeholder="enter number" id="num">
+        <button type="button" onclick="func()">Click</button>
+        <p id="ans"></p>
+        <script>
+            function func()
+            {
+                var x = parseInt(document.getElementById("num").value);
+                var ans = 0;
+                while(x>0)
+                {
+                    console.log(ans);
+                    ans = ans*10 + x%10;
+                    x = Math.floor(x/10);
+                }
+                //alert(ans);
+                document.getElementById("ans").innerHTML = ans;
+            }
+        </script>
+    </body>
+</html>
